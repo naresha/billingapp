@@ -1,0 +1,13 @@
+apply plugin: "groovy"
+apply plugin: "application"
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile 'org.codehaus.groovy:groovy-all:2.4.8'
+    testCompile 'org.spockframework:spock-core:1.0-groovy-2.4'
+}
+
+mainClassName = 'app.main.Application'
